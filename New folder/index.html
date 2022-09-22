@@ -1,0 +1,73 @@
+z  <!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>it my popup degign</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!--<form method="Post" class="contact-form"></form>-->
+        <button type ="submit" class="btn" onclick="openpopup()">Confirm Submit</button>
+        <div class="popup" id =popup>
+            <img src="check-mark.png">
+            <h2>Thank you!</h2>
+            <p>Your details has been succesfully submitted. Thanks!</p>
+            <button type="button" onclick="closePopup()">OK</button>
+        <!--</form>-->
+        </div>
+    </div>
+    <script>
+        let popup = document.getElementById("popup");
+        function openpopup(){
+            popup.classList.add("open-popup");
+        }
+        function closepopup(){
+            popup.classList.remove("open-popup");
+        }
+        
+        </script>
+        
+</body>
+
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+<script>
+
+    function sandmail(){
+        
+        var name = $('#Your Full Name').val();
+        var number  = $('#Phone No').val();
+        var email = $('#Email Id').val();
+        var location = $('#Location').val();
+        var subject = $('#Subject').val();
+        var message = $('#Your Message').val();
+
+        var Body='Your Full Name: '+name+'<br/>Phone No: '+number+'<br/>Email Id: '+email+'<br/>Location: '+location+'<br/>Subject: '+subject+'<br/>Your Message: '+message;
+        
+    
+Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "subamprasad4311@gmail.com",
+    Password : "065939B33DE6E38582D1916984D567AB4965",
+    To : 'subamprasad4311@gmail.com',
+    From : inputs.element["email"].value,
+    Subject : "New Mail On The Contact Form:"+name,
+    Body : Body
+}).then(
+    message => {
+        if(message== 'OK'){
+            alert("Thank Your Email Has Been Sand. Thank You! For Connecting.");
+        }
+        else{
+            console.error (message);
+            alert('There Is Error at Sanding Message. ')
+        }
+    }
+    );
+}
+</script>-->
+</html>
+
